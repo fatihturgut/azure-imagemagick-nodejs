@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <system.webServer>
+    <runtime xdt:Transform="InsertIfMissing">
+      <environmentVariables xdt:Transform="InsertIfMissing">
+        <add name="PATH" value="%PATH%%HOME%\SiteExtensions\ImageMagick-nodejs\lib;" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+        <add name="MAGICK_HOME" value="%HOME%\SiteExtensions\ImageMagick-nodejs\lib\" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+        <add name="MAGICK_CODER_FILTER_PATH" value="%HOME%\SiteExtensions\ImageMagick-nodejs\lib\" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+        <add name="MAGICK_CODER_MODULE_PATH" value="%HOME%\SiteExtensions\ImageMagick-nodejs\lib\" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+        <add name="MAGICK_CONFIGURE_PATH" value="%HOME%\SiteExtensions\ImageMagick-nodejs\lib\" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+      </environmentVariables>
+    </runtime>
+  </system.webServer>
+</configuration>
