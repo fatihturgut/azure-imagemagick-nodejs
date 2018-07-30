@@ -3,7 +3,7 @@
   <system.webServer>
     <runtime xdt:Transform="InsertIfMissing">
       <environmentVariables xdt:Transform="InsertIfMissing">
-        <add name="PATH" value="%PATH%%HOME%\SiteExtensions\ImageMagick-nodejs\lib;" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+        <add name="PATH" value="%HOME%\SiteExtensions\ImageMagick-nodejs\lib;%PATH%" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
         <add name="MAGICK_HOME" value="%HOME%\SiteExtensions\ImageMagick-nodejs\lib\" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
         <add name="MAGICK_CODER_FILTER_PATH" value="%HOME%\SiteExtensions\ImageMagick-nodejs\lib\" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
         <add name="MAGICK_CODER_MODULE_PATH" value="%HOME%\SiteExtensions\ImageMagick-nodejs\lib\" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
@@ -11,4 +11,11 @@
       </environmentVariables>
     </runtime>
   </system.webServer>
+  <system.identityModel>
+    <identityConfiguration>
+      <audienceUris>        
+      </audienceUris>
+    </identityConfiguration>
+  </system.identityModel>
+  <EnableADPublish>false</EnableADPublish>
 </configuration>
