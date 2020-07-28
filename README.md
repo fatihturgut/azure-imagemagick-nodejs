@@ -9,7 +9,7 @@ https://www.siteextensions.net/packages/ImageMagick-nodejs/
   
 ### Usage
   
-Include GrahpicsMagick/ImageMagick for nodejs app by below code
+Include GrahpicsMagick/ImageMagick with following code
 
 ```javascript
 const gm = require('gm');
